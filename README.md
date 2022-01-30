@@ -14,7 +14,7 @@
 ##### Work Area
 
 add files of working area to stage area
-`git add fine_name.type`
+`git add file_name.type`
 
 get specific files from local repo
 `git checkout`
