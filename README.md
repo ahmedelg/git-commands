@@ -24,7 +24,8 @@ get specific files from local repo
 take a snaphot to local repo
 `git commit`
 
-##### Local Repo:
+##### Local Repo
+
 
 `git push`
 `git pull`
@@ -33,7 +34,8 @@ take a snaphot to local repo
 
 ---
 
-#### Hints
+#### Notes
+
 
 - Each _repo_ has a _default branch_ `Master`
 
@@ -43,14 +45,8 @@ take a snaphot to local repo
 - Each commit has a `hash code`
 - _HEAD_ is a reference of _current branch_
 
-- - -
-#### Basic Commands
-1. git status _status of repo_
-2. git add
-3. git commit
-4. git log _hist of commits_
-1. git diff
 ---
+
 
 #### git config
 
@@ -136,10 +132,20 @@ merge branch with master
 والأساسي يُستخدم لرفع المشروع
 
 
-- - -
-#### Notes:
+---
 
-- git commit -am 'Message of Commit'
+<!--
+
+#### Notes:
+git commit -am 'Message of Commit'
+
+--- -->
+
+
+#### Commands
+
+`git status` `git add` `git commit` `git log` `git diff`
+
 
 
 
