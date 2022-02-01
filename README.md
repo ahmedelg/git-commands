@@ -85,7 +85,8 @@ Pull the changes from the repos
 `git pull [name][b]`
 Pull any changes from a remote repo called [name] from branch [b]
 
-###### _before make `pull req` you should commit your changes_
+<!-- ###### _before make `pull req` you should commit your changes_ -->
+
 
 - - -
 ### `.gitignore` File
@@ -173,6 +174,38 @@ git commit -am 'Message of Commit'
 
 `git status` `git add` `git commit` `git log` `git diff`
 
+
+---
+
+### GITHUB Use Cases! & GIT Solutions
+
+#### Start a new project
+
+- git init
+- git clone remote-repo-url
+
+#### Upload new updates with main branch
+
+- git commit -m ‘message of commit’
+- git push origin master
+
+#### Download from remote repo on master branch
+
+- git pull origin master
+
+#### Changes are not correct in working tree, the need to discard changes & return to lastest state that means _before stage_!
+
+  <!-- _Minus means something deleted, Plus means something added_ -->
+
+<!-- - git diff file.type -->
+
+- git restore file.type
+
+#### Changes are not correct in stage area, the need to discard changes & return to lastest state!
+
+<!-- - git diff file.type -->
+
+- git restore –-staged file.type
 
 
 
