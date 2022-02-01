@@ -4,9 +4,7 @@
 
 ### Architectur of Git
 
-
 #### Work Area
-
 
 add files of working area to stage area
 `git add file_name.type`
@@ -16,12 +14,10 @@ get specific files from local repo
 
 #### Stage Area
 
-
 take a snaphot to local repo
 `git commit`
 
 #### Local Repo
-
 
 
 `git push`
@@ -29,11 +25,9 @@ take a snaphot to local repo
 
 #### Remote Repo
 
-
 ---
 
 ### Notes
-
 
 
 - Each _repo_ has a _default branch_ `Master`
@@ -46,9 +40,7 @@ take a snaphot to local repo
 
 ---
 
-
 ### git config
-
 
 Developer name
 `git config --global user.name 'user-name'`
@@ -80,17 +72,14 @@ push changes to a remote repo called [name] to branch [b]
 - - -
 ### git pull
 
-
 Pull the changes from the repos
 `git pull [name][b]`
 Pull any changes from a remote repo called [name] from branch [b]
 
 <!-- ###### _before make `pull req` you should commit your changes_ -->
 
-
 - - -
 ### `.gitignore` File
-
 
 .gitignore file includes the files that must not be uploaded with staged files of project
 name*of_file.type example \_secret.json*
@@ -99,7 +88,6 @@ name*of_file.type example \_secret.json*
 
 ### About Branches
 
-
 [About branches](https://www.youtube.com/watch?v=WtCXZoQqVzI&list=PL_aOZuct6oAogr4UMkWddU7leOXw0QKJS&index=4)
 Each branch consists of _commits_
 `What Branch?` makes a copy of the _current branch_ in _another place_ you can modify as you wish without affecting the origin
@@ -107,7 +95,6 @@ Each branch consists of _commits_
 ###### _So when new feature I added successfully done, Now I can make merge new feature in main repo by merge the branches with each other_
 
 ### git branch
-
 
 _Create_ a new branch
 `git branch _new_branch_name_`
@@ -128,7 +115,6 @@ Show _all branches_ of current repo
 
 ### git merge
 
-
 [Merge](https://www.youtube.com/watch?v=74ZuPrgzRpE)
 merge new code from _specific branch_ with _master_
 
@@ -140,7 +126,6 @@ merge branch with master
 
 لابد وان يكون هناك فروع أٌخري غير الافتراضي بحيث يكون كل فرع مختص بجزء معين من المشروع
 والأساسي يُستخدم لرفع المشروع
-
 
 ---
 ### git diff
@@ -160,7 +145,6 @@ return to latest state before make changes in working tree
 
 ---
 
-
 <!--
 
 #### Notes:
@@ -168,12 +152,9 @@ git commit -am 'Message of Commit'
 
 --- -->
 
-
 ### Commands
 
-
 `git status` `git add` `git commit` `git log` `git diff`
-
 
 ---
 
@@ -206,6 +187,24 @@ git commit -am 'Message of Commit'
 <!-- - git diff file.type -->
 
 - git restore –-staged file.type
+
+#### The need to return latest state before commit
+
+[geeksforgeeks](https://www.geeksforgeeks.org/how-to-undo-a-commit-in-git/)
+
+`git --help`
+
+reset: reset current HEAD to the specified state
+
+- git log --pretty=one
+
+  soft is used if you want to keep your changes
+
+- git reset –-soft HEAD^
+
+  hard is used if you don’t want to keep your changes
+
+- git reset –-hard HEAD^
 
 
 
