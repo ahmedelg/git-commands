@@ -85,6 +85,8 @@ Pull the changes from the repos
 `git pull [name][b]`
 Pull any changes from a remote repo called [name] from branch [b]
 
+###### _before make `pull req` you should commit your changes_
+
 - - -
 ### `.gitignore` File
 
