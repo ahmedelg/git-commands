@@ -5,7 +5,8 @@
 ### Architectur of Git
 
 
-##### Work Area
+#### Work Area
+
 
 add files of working area to stage area
 `git add file_name.type`
@@ -13,18 +14,21 @@ add files of working area to stage area
 get specific files from local repo
 `git checkout`
 
-##### Stage Area
+#### Stage Area
+
 
 take a snaphot to local repo
 `git commit`
 
-##### Local Repo
+#### Local Repo
+
 
 
 `git push`
 `git pull`
 
-##### Remote Repo
+#### Remote Repo
+
 
 ---
 
