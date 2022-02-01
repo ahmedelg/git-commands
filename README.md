@@ -136,6 +136,23 @@ merge branch with master
 
 
 ---
+### git diff
+
+view occured differences of files
+`git diff file.type` `git diff`
+
+---
+
+### git restore
+
+return to latest state before make changes in working tree
+
+- _before stage_ `git restore file.type` `git restore`
+
+- _after stage_ `git restore --staged file.type`
+
+---
+
 
 <!--
 
