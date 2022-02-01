@@ -1,15 +1,9 @@
 # git-cli
 
-
-
-
-
-
-
-
 [Course](https://www.youtube.com/watch?v=Q5Eb3jBvFEE&list=PL_aOZuct6oAogr4UMkWddU7leOXw0QKJS)
 
-#### Architectur of Git
+### Architectur of Git
+
 
 ##### Work Area
 
@@ -34,7 +28,8 @@ take a snaphot to local repo
 
 ---
 
-#### Notes
+### Notes
+
 
 
 - Each _repo_ has a _default branch_ `Master`
@@ -48,7 +43,8 @@ take a snaphot to local repo
 ---
 
 
-#### git config
+### git config
+
 
 Developer name
 `git config --global user.name 'user-name'`
@@ -58,7 +54,8 @@ Developer email
 `git config --global --list`
 
 - - -
-#### git init
+### git init
+
 `git init`
 
 add a remote repo with [url] and an alias of [name]
@@ -71,26 +68,30 @@ merge main in master
 `git branch -M main`
 
 - - -
-#### git push
+### git push
+
 push changes to a remote repo called [name] to branch [b]
 `git push [name][b]`
 
 - - -
-#### git pull
+### git pull
+
 
 Pull the changes from the repos
 `git pull [name][b]`
 Pull any changes from a remote repo called [name] from branch [b]
 
 - - -
-#### `.gitignore` File
+### `.gitignore` File
+
 
 .gitignore file includes the files that must not be uploaded with staged files of project
 name*of_file.type example \_secret.json*
 
 ---
 
-#### About Branches
+### About Branches
+
 
 [About branches](https://www.youtube.com/watch?v=WtCXZoQqVzI&list=PL_aOZuct6oAogr4UMkWddU7leOXw0QKJS&index=4)
 Each branch consists of _commits_
@@ -98,7 +99,8 @@ Each branch consists of _commits_
 
 ###### _So when new feature I added successfully done, Now I can make merge new feature in main repo by merge the branches with each other_
 
-#### git branch
+### git branch
+
 
 _Create_ a new branch
 `git branch _new_branch_name_`
@@ -117,7 +119,8 @@ Show _all branches_ of current repo
 
 ---
 
-#### git merge
+### git merge
+
 
 [Merge](https://www.youtube.com/watch?v=74ZuPrgzRpE)
 merge new code from _specific branch_ with _master_
@@ -142,7 +145,8 @@ git commit -am 'Message of Commit'
 --- -->
 
 
-#### Commands
+### Commands
+
 
 `git status` `git add` `git commit` `git log` `git diff`
 
