@@ -158,6 +158,15 @@ git commit -am 'Message of Commit'
 
 ---
 
+### About Contributors Or Collaborators
+
+1. Settings
+1. Collaborators
+1. Add people Button
+1. Type & Add users names
+
+---
+
 ### GITHUB Use Cases! & GIT Solutions
 
 #### Start a new project
