@@ -145,6 +145,45 @@ return to latest state before make changes in working tree
 
 ---
 
+### Revert Commits! _Unpublished_ Or _Published_
+
+[PhoenixNAP](https://phoenixnap.com/kb/git-revert-last-commit#:~:text=To%20reset%20to%20a%20previous%20commit%2C%20before%20any,be%20lost%20after%20using%20the%20reset%20--hard%20command.) - [geeksforgeeks](https://www.geeksforgeeks.org/how-to-undo-a-commit-in-git/)
+
+**Examine Previous Commit**
+"To analyze the status of your project from a previous commit, use the checkout command"
+`git checkout [hash]`
+
+###### _"When using a hash with a Git command, there is no need to type it in its entirety. The first few unique characters are enough for Git to identify an entry accurately."_
+
+**Revert Unpublished Commit**
+"An unpublished commit is an update committed in Git but that has not been uploaded to a server. To reset to a previous commit, before any changes were made:"
+`git reset --hard [hash]` `git reset --soft [hash]`
+
+**Revert Published Commit**
+"Once a commit is uploaded to the server, it creates a more permanent project log. It is not advisable to use reset in this case. Other developers may have retrieved the updated project already."
+
+###### _"Deleting updates from one system may cause conflicts with other team members. Instead, use the revert command:"_
+
+`git revert [hash]`
+
+###### _"Make sure to enter the code for the hash you want to revert to. The system asks you to enter a specific commit message for the changes the revert command is going to perform."_
+
+`git status` `git log`
+
+###### _"This action creates a new commit based on the one you specified, with a revert tag. This acts as a log, showing that the commit was published and then reverted (instead of pretending it never happened)."_
+
+- Soft is used if you want to keep your changes
+
+  - `git reset –-soft HEAD^`
+
+- Hard is used if you don’t want to keep your changes
+
+  - `git reset –-hard HEAD^`
+
+-
+
+---
+
 <!--
 
 #### Notes:
@@ -199,7 +238,7 @@ git commit -am 'Message of Commit'
 
 #### The need to return latest state before commit
 
-[geeksforgeeks](https://www.geeksforgeeks.org/how-to-undo-a-commit-in-git/)
+
 
 `git --help`
 
@@ -211,7 +250,9 @@ reset: reset current HEAD to the specified state
 
 - git reset –-soft HEAD^
 
-  hard is used if you don’t want to keep your changes
+hard is used if you don’t want to keep your changes
+
+
 
 - git reset –-hard HEAD^
 
